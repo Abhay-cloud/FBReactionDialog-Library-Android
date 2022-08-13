@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -44,7 +45,7 @@ public class FBReactionDialog  implements View.OnClickListener, View.OnTouchList
 
         view.post(() -> {
             view.getLocationOnScreen(location);
-//            Toast.makeText(context, location[0] + " " + location[1] , Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, location[0] + " " + location[1] , Toast.LENGTH_SHORT).show();
             dialog.getWindow().getAttributes().x = location[0] - 150;
             dialog.getWindow().getAttributes().y = location[1] - 850;
         });
