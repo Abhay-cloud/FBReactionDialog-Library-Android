@@ -49,7 +49,7 @@ public class FBReactionDialog  implements View.OnClickListener, View.OnTouchList
             dialog.getWindow().getAttributes().x = location[0] - 150;
             dialog.getWindow().getAttributes().y = location[1] - 850;
         });
-        slide_up = AnimationUtils.loadAnimation(dialog.getContext(), R.anim.slide_up);
+        slide_up = AnimationUtils.loadAnimation(dialog.getContext(), R.anim.fall_down_up);
 
         re1 = dialog.findViewById(R.id.reaction1);
         re2 = dialog.findViewById(R.id.reaction2);
